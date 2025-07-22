@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":true,"name":"Firsteria Front Gate","order":3,"parentId":2,"scrollX":1769.4545454545455,"scrollY":1050.5454545454545,"quick":false},
-{"id":2,"expanded":true,"name":"Firsteria","order":2,"parentId":0,"scrollX":1581,"scrollY":1349.5,"quick":false},
+{"id":2,"expanded":true,"name":"Firsteria","order":2,"parentId":0,"scrollX":1216,"scrollY":1104,"quick":false},
 {"id":3,"expanded":true,"name":"Castle Firsteria","order":5,"parentId":2,"scrollX":1769.4545454545455,"scrollY":1050.5454545454545,"quick":false},
 {"id":4,"expanded":false,"name":"Inside Castle Firsteria","order":6,"parentId":3,"scrollX":1109,"scrollY":473.5,"quick":false},
 {"id":5,"expanded":true,"name":"Inside Guild","order":4,"parentId":2,"scrollX":811,"scrollY":473.5,"quick":false},
@@ -15,5 +15,5 @@ null,
 {"id":13,"expanded":true,"name":"Veillune Forest 1","order":11,"parentId":9,"scrollX":884.7272727272727,"scrollY":516.5454545454546,"quick":false},
 {"id":14,"expanded":true,"name":"Veillune Forest 2","order":12,"parentId":9,"scrollX":675.2727272727273,"scrollY":367.0909090909091,"quick":false},
 {"id":15,"expanded":true,"name":"Veillune Forest 3","order":13,"parentId":9,"scrollX":819,"scrollY":538.5,"quick":false},
-{"id":16,"expanded":false,"name":"Inside Shop","order":9,"parentId":2,"scrollX":412.6666666666667,"scrollY":327.6666666666667,"quick":false}
+{"id":16,"expanded":false,"name":"Inside Shop","order":9,"parentId":2,"scrollX":540.6666666666666,"scrollY":431,"quick":false}
 ]
