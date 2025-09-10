@@ -110,12 +110,21 @@ Spriteset_Battle.prototype.updateActors = function () {
   DA.Spriteset_Battle.call(this);
   if (this._actorSprites.length < DA.currentMaxMembers) {
     const members = $gameParty.allMembers();
+    const lastMember = members[members.length - 1];
+    if (!lastMember) return;
+
     const sprite = new Sprite_Actor();
     this._actorSprites.push(sprite);
     this._battleField.addChild(sprite);
     $gameParty.swapOrder(DA.currentMaxMembers - 1, $gameParty.allMembers().length - 1);
-    this._actorSprites[DA.currentMaxMembers - 1].setBattler(members[$gameParty.allMembers().length - 1]);
+    this._actorSprites[DA.currentMaxMembers - 1].setBattler(lastMember);
   }
+};
+
+const _Sprite_Battler_refreshMotion = Sprite_Battler.prototype.refreshMotion;
+Sprite_Battler.prototype.refreshMotion = function () {
+  if (!this._battler) return;
+  _Sprite_Battler_refreshMotion.call(this);
 };
 
 DA.summonActor = function (actorId, caster) {
@@ -145,6 +154,17 @@ BattleManager.endBattle = function (result) {
   summonedActors.forEach((actor) => {
     $gameParty.removeActor(actor.actorId());
   });
+
+  // 🧹 Bersihkan sprite-sprite yang tidak punya battler lagi
+  if (SceneManager._scene && SceneManager._scene._spriteset) {
+    SceneManager._scene._spriteset._actorSprites = SceneManager._scene._spriteset._actorSprites.filter((sprite) => {
+      if (!sprite._battler) {
+        SceneManager._scene._spriteset._battleField.removeChild(sprite);
+        return false;
+      }
+      return true;
+    });
+  }
 
   DA.currentMaxMembers = DA.defaultMaxMembers;
   DA.summonCount = 0;
