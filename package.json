@@ -3,9 +3,9 @@
     "main": "index.html",
     "chromium-args": "--force-color-profile=srgb --disable-devtools",
     "window": {
-        "title": "Aetherion V 0.2",
+        "title": "Aetherion V 0.3",
         "width": 1280,
-        "height": 720,
+        "height": 800,
         "position": "center",
         "icon": "icon/icon.png"
     }
