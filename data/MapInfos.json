@@ -18,5 +18,5 @@ null,
 {"id":16,"expanded":false,"name":"Inside Shop","order":8,"parentId":2,"scrollX":628.5,"scrollY":442,"quick":false},
 {"id":17,"expanded":false,"name":"Shadowfell 2","order":16,"parentId":12,"scrollX":1508,"scrollY":2159.5,"quick":false},
 {"id":18,"expanded":true,"name":"True Shadowfell","order":18,"parentId":0,"scrollX":1131,"scrollY":629.5,"quick":false},
-{"id":19,"expanded":false,"name":"True Shadowfell 1","order":19,"parentId":18,"scrollX":3480,"scrollY":1670.5,"quick":false}
+{"id":19,"expanded":false,"name":"True Shadowfell 1","order":19,"parentId":18,"scrollX":3481,"scrollY":1808.5,"quick":false}
 ]
